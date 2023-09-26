@@ -1,0 +1,36 @@
+{
+  "name": "material-ui-nextjs-ts",
+  "version": "5.0.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",
+    "start": "next start",
+    "codegen": "npx @rtk-incubator/rtk-query-codegen-openapi https://petstore.swagger.io/v2/swagger.json -h --exportName api --reducerPath api --baseQuery src/store/BaseQueryWithAuth.ts -f src/store/api.ts"
+  },
+  "dependencies": {
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "latest",
+    "@mui/material": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-redux": "latest",
+    "redux-persist": "latest",
+    "@reduxjs/toolkit": "latest"
+  },
+  "devDependencies": {
+    "@rtk-incubator/rtk-query-codegen-openapi": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "prettier": "latest",
+    "typescript": "latest"
+  }
+}
